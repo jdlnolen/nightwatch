@@ -10,7 +10,7 @@ install:
   - "mrt update"
 
 before_script:
-  - "mrt"
+  - "mrt &"
 
 script:
   - "./help.sh"
