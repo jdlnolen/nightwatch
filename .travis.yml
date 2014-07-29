@@ -9,6 +9,9 @@ install:
   - "npm install -g meteorite"
   - "mrt update"
 
+before_script:
+  - "mrt"
+
 script:
   - "./help.sh"
  
