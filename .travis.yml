@@ -11,6 +11,7 @@ install:
 
 before_script:
   - "mrt &"
+  - sleep 3
 
 script:
   - "./help.sh"
