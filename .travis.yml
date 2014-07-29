@@ -10,9 +10,10 @@ install:
   - "mrt update"
 
 before_script:
-  - "mrt &"
+  - "meteor &"
   - sleep 3
 
 script:
   - "./run_nightwatch.sh -t tests/helloworld.js"
+ 
  
