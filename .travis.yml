@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "0.10"
+services: mongodb
+install:
+  - "git clone https://github.com/meteor/meteor.git ~/meteor"
+  - "export PATH=~/meteor/:$PATH"
+
+  - "npm install -g meteorite"
+  - "mrt update"
+
+script:
+	- mrt &
+	- ./run_nightwatch.sh -t tests/helloworld.js
