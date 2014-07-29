@@ -14,5 +14,5 @@ before_script:
   - sleep 3
 
 script:
-  - "./help.sh"
+  - "./run_nightwatch.sh -t tests/helloworld.js"
  
