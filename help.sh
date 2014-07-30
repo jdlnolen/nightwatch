@@ -1,2 +1,3 @@
-cd ~/.meteor/local/build
+var1=$(pwd)"/.meteor"
+echo $var1
 
