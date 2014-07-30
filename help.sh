@@ -1,1 +1,2 @@
-cd .meteor/local/build
+pwd
+ls -a
