@@ -17,7 +17,7 @@ install:
 
 before_script:
   - "meteor &"
-  - sleep 12
+  - sleep 20
 
 script:
   - "./run_nightwatch.sh -t tests/helloworld.js"
