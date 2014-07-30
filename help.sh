@@ -1,3 +1,2 @@
-var1=$(pwd)"/.meteor"
-echo $var1
-
+var1=$(pwd)"/.meteor/local/build"
+npm install nightwatch@0.5.3
