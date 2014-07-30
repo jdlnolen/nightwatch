@@ -1,4 +1,2 @@
-pwd
-ls -a
-which npm
+cd ~/.meteor/local/build
 
