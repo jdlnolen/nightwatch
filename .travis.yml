@@ -2,6 +2,11 @@ language: node_js
 node_js:
   - "0.10"
 services: mongodb
+
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+
 install:
   - "git clone https://github.com/meteor/meteor.git ~/meteor"
   - "export PATH=~/meteor/:$PATH"
@@ -11,7 +16,7 @@ install:
 
 before_script:
   - "meteor &"
-  - sleep 6
+  - sleep 9
 
 script:
   - "./run_nightwatch.sh -t tests/helloworld.js"
