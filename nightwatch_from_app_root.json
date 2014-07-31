@@ -10,7 +10,7 @@
     "server_path" : "packages/selenium-nightwatch/selenium/selenium-server-standalone-2.42.0.jar",
     "log_path" : "packages/selenium-nightwatch/logs",
     "host" : "127.0.0.1",
-    "port" : 4444,
+    "port" : 4445,
     "cli_args": {
       "webdriver.chrome.driver": "packages/selenium-nightwatch/selenium/chromedriver"
     }
@@ -20,7 +20,7 @@
     "default" : {
       "launch_url" : "",
       "selenium_host" : "localhost",
-      "selenium_port" : 4444,
+      "selenium_port" : 4445,
       "silent" : false,
       "disable_colors": false,
       "firefox_profile" : false,
