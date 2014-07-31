@@ -17,6 +17,9 @@ install:
   - "sudo apt-get install libxss1 libappindicator1 libindicator7"
   - "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
   - "sudo dpkg -i google-chrome*.deb "
+  - "wget http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar"
+  - "java -jar selenium-server-standalone-2.42.2.jar > /dev/null &"
+  - sleep 5
 
 before_script:
   - "meteor &"
